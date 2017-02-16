@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, "5.0"
 
   s.dependency "ss_spatialite"
-  s.dependency "FMDB/standalone-fts"
+  s.dependency "FMDB/standalone/FTS"
   s.dependency "ShapeKit"
   s.requires_arc = true
 
