@@ -15,18 +15,13 @@ Pod::Spec.new do |s|
 SpatiaLite is smoothly integrated into SQLite to provide a complete and powerful Spatial DBMS (mostly OGC-SFS compliant).
                        DESC
 
-  s.homepage         = 'https://github.com/deluks2/ss_spatialite'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://git.oschina.net/spidersens/ss_spatialite'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'deluks2' => 'ycao@spidersens.com' }
-  #s.source           = { :git => 'https://github.com/deluks2/ss_spatialite.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Yuan Cao' => 'ycao@spidersens.com' }
 
   s.ios.deployment_target = '8.0'
 
-	#s.source   = { :git => "https://github.com/deluks2/spatialite-ios.git" }
-	s.source   = { :git => "/Users/caoyuan/Desktop/spatialite/spatialite-ios" }
-	#s.source = { :http => "http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-"+ s.version.to_s + ".tar.gz" }
+	s.source   = { :git => "https://git.oschina.net/spidersens/ss_spatialite.git", :tag => 'v' + s.version.to_s }
 	s.requires_arc = false
 
 	s.ios.deployment_target = '4.0'
@@ -50,4 +45,5 @@ SpatiaLite is smoothly integrated into SQLite to provide a complete and powerful
 	s.dependency 'sqlite3/fts'
 	s.dependency 'geos'
 	s.dependency 'proj4'
+	
 end
