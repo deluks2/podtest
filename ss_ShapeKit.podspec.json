@@ -26,6 +26,7 @@
     "geos/*.{cpp,h}"
   ],
   "public_header_files": "ShapeKit/*.h",
+  "private_header_files": "ShapeKit/ShapeKitPrivateInterface.h",
   "dependencies": {
     "geos": [
 
@@ -35,6 +36,7 @@
     ]
   },
   "frameworks": "CoreLocation",
+  "libraries": "stdc++.6",
   "xcconfig": {
     "OTHER_LDFLAGS": "-ObjC -lstdc++",
     "HEADER_SEARCH_PATHS": "${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi",
