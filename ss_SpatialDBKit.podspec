@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
 
   s.source_files = "SpatialDBKit/*.{h,m}"
 
-  s.public_header_files = "SpatialDBKit/*.h"
+  s.public_header_files = "SpatialDBKit/SpatialDBKit.h", 'SpatialDBKit/SpatialDatabase.h'
+  s.private_header_files = "SpatialDBKit/*.h"
   
   s.pod_target_xcconfig = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/ss_spatialite/src/headers', 'ALWAYS_SEARCH_USER_PATHS' => 'YES'}
 
